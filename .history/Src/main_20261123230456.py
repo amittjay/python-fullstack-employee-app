@@ -1,0 +1,7 @@
+from employee import employee
+from salary import calculate_hike, calculate_monthly_salary
+def main():
+    emp = employee( name="Amit Kumar Tiwari",
+        city="New Delhi",
+        experience=8,
+        ctc=15)
