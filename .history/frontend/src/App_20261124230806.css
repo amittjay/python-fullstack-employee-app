@@ -1,0 +1,52 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: '【entity-Inter¦canonical_name=Inter】', 'Segoe UI', system-ui, sans-serif; }
+body { background: #f0f2f5; color: #1f2937; }
+
+/* ===== LOGIN - 3D Glass ===== */
+.login-container { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #7c3aed 100%); padding: 20px; }
+.login-card { background: rgba(255,255,255,0.98); width: 100%; max-width: 430px; padding: 36px 32px; border-radius: 20px; box-shadow: 0 25px 60px rgba(0,0,0,0.35); text-align: center; }
+.login-card h1 { font-size: 28px; margin-bottom: 6px; }
+.login-card p { color: #6b7280; font-size: 13px; margin-bottom: 20px; }
+.login-input { width: 100%; padding: 12px 14px; border: 1.5px solid #e5e7eb; border-radius: 10px; font-size: 14px; outline: none; background: #f9fafb; transition: 0.2s; }
+.login-input:focus { border-color: #2563eb; background: #fff; box-shadow: 0 0 0 3px rgba(37,99,235,0.15); }
+.login-btn { width: 100%; padding: 13px; border: none; border-radius: 10px; background: linear-gradient(90deg, #2563eb, #7c3aed); color: #fff; font-weight: 700; font-size: 15px; cursor: pointer; margin-top: 4px; }
+.login-btn:hover { opacity: 0.92; transform: translateY(-1px); }
+
+/* ===== DASHBOARD ===== */
+.dashboard { min-height: 100vh; }
+.header { position: sticky; top: 0; z-index: 10; background: #0f172a; color: #fff; padding: 14px 28px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 20px rgba(0,0,0,0.2); }
+.header h2 { font-size: 19px; font-weight: 800; }
+.header h2 span { font-weight: 400; color: #93c5fd; font-size: 13px; }
+.logout-btn { padding: 8px 14px; border-radius: 8px; border: 1px solid #e5e7eb; background: #fff; cursor: pointer; font-weight: 600; font-size: 13px; }
+.logout-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.content { max-width: 1220px; margin: 0 auto; padding: 22px; }
+
+/* Stats */
+.stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 18px; }
+.stat-card { background: #fff; padding: 18px; border-radius: 16px; box-shadow: 0 4px 14px rgba(0,0,0,0.06); border-top: 4px solid #2563eb; }
+.stat-card:nth-child(2) { border-top-color: #10b981; }
+.stat-card:nth-child(3) { border-top-color: #f59e0b; }
+.stat-card:nth-child(4) { border-top-color: #8b5cf6; }
+.stat-card small { color: #6b7280; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; font-size: 11px; }
+.stat-card h3 { font-size: 28px; margin: 8px 0 2px; }
+.stat-card p { color: #10b981; font-size: 12px; font-weight: 600; }
+
+/* Card */
+.card { background: #fff; padding: 20px; border-radius: 16px; box-shadow: 0 4px 14px rgba(0,0,0,0.06); margin-bottom: 18px; }
+.card h3 { font-size: 16px; margin-bottom: 14px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr auto; gap: 10px; }
+.add-btn { padding: 12px 16px; border: none; border-radius: 10px; background: #111827; color: #fff; font-weight: 700; cursor: pointer; white-space: nowrap; }
+.add-btn:hover { background: #2563eb; }
+
+/* Table */
+.table-wrap { overflow-x: auto; border: 1px solid #eef2f7; border-radius: 12px; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+thead th { background: #f8fafc; text-align: left; padding: 12px; color: #475569; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 1px solid #e5e7eb; }
+tbody td { padding: 12px; border-bottom: 1px solid #f1f5f9; }
+tbody tr:hover { background: #f8fafc; }
+.badge { padding: 5px 10px; border-radius: 20px; font-size: 11px; font-weight: 700; }
+.badge-senior { background: #dbeafe; color: #1d4ed8; }
+.badge-junior { background: #fef3c7; color: #92400e; }
+.delete-btn { padding: 6px 12px; border-radius: 8px; border: 1px solid #fecaca; background: #fef2f2; color: #dc2626; cursor: pointer; font-weight: 600; }
+.delete-btn:hover { background: #dc2626; color: #fff; }
+
+@media (max-width: 900px) { .stats-row { grid-template-columns: 1fr 1fr; } .form-row { grid-template-columns: 1fr 1fr; } .header { flex-direction: column; gap: 10px; align-items: flex-start; } }
